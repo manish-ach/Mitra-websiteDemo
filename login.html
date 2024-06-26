@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login/style.css">
+</head>
+<body>
+
+    <div id="login">
+        <img src="login/m4nv.png" id="logo">
+        <br>
+        <h1>Sign in to Mitra</h1>
+        <form action="php/connect.php" method="post">
+            Username:<br><input type="text" name="username" placeholder="Enter Username" id="inp1" required><br>
+            <br>
+            Password:<br><input type="password" name="password" placeholder="Enter password" id="inp2" required><br>
+            <input type="checkbox" onclick="pass()">Show Password <br>  <br>
+            
+            <div class="wrap">
+                <button type="submit" onclick="solve()">
+                      Log in
+                </button>
+            </div>
+        </form>
+        <p>Not registered?
+            <a href="#">
+                Create an account
+            </a>
+        </p>
+    </div>
+
+</body>
+<script src="login/index.js"></script>
+</html>
