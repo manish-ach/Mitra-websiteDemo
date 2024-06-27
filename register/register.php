@@ -17,4 +17,8 @@ $jsonData = json_encode($data);
 file_put_contents('data.json', $jsonData);
 
 echo "Data written to data.json!";
+header("Location: ../login.html");
+
+// Exit the script to prevent further execution
+exit();
 ?>
