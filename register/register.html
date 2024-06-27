@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div id="register">
+        <h1>Register</h1>
+        <form action="register.php" method="post">
+            Enter Username:
+            <br>
+            <input type="text" name="username" placeholder="Enter Username" id="inp1" required>
+            <br>
+            <br>
+            Enter Email:
+            <br>
+            <input type="email" name="email" placeholder="Enter email" id="inp2" required>
+            <br>
+            <br>
+            <label for="password">Enter Password:</label>
+            <br>
+            <input type="password" name="password" placeholder="Enter password" id="password" required>
+            <br>
+            <br>
+            <label for="confirm_password">Confirm Password:</label>
+            <br>
+            <input type="password" name="confirm_password" placeholder="Enter password" id="confirm_password" required>
+            <br>
+            
+            <input type="checkbox" onclick="pass()">Show Password
+            <br>
+            <input type="checkbox" name="terms" required> I accept all terms and condition
+            <br>
+            <div class="wrap">
+                <button type="submit">
+                      Sign Up
+                </button>
+            </div>
+        </form>
+        <p>already registered?
+            <a href="../login.html">
+                Sign in
+            </a>
+        </p>
+    </div>
+</body>
+<script src="register.js"></script>
+</html>
